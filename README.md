@@ -1,1 +1,2 @@
 # Solidity_Vault
+Here we created a solidity smart contract acting as a digital vault. Anyone can deposit ETH into the contract but only the contract owner can withdraw ETH. Withdrawals are restricted to the available contract balance.The ownership mechanism is created using the constructor. By saving msg.sender to a state variable, the contract identifies who created it. We then use require statements in the withdraw function to check whether the person withdrawing is the owner or not, checking the caller's address against that stored owner address.
